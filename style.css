@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+    background-image: url('./imagem/goku\ house.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #ddd;
+    margin-bottom: 20px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.758);
+    font-size: 4rem;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#pageInput {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 2px 8px black;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #171ac4;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchBtn:hover{
+    background-color: #171ac4;
+    box-shadow: 0 2px #000000a2;
+
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card{
+    background: #000000c5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: #000000;
+    transition: all 200ms ease-in-outs;
+    box-shadow: rgb(252, 255, 85) -5px 5px, rgba(252, 255, 85) -10px 10px, rgba(252, 255, 85) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 100%;
+    transition: all 200ms ease-in-out;
+
+}
+
+.card:hover {
+    box-shadow: rgba(88, 240, 46, 0.4) -5px 5px, rgba(62, 240, 46, 0.3) -10px 10px, rgba(78, 240, 46, 0.2) -15px 15px, rgba(78, 240, 46, 0.1) -20px 20px, rgba(82, 240, 46, 0.05) -25px 25px;
+}
+
+.card:hover h3 {
+    color: #171ac4;
+    text-shadow: 0 2px 8px #171ac4;
+}
+
+.card:hover img {
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #dddddd93;
+}
+
+.card:hover p {
+    color: #dddddd;
+}
+
+.card strong {
+    color: #171ac4;
+    font-weight: bold;
+}
