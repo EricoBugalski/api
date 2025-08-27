@@ -7,19 +7,19 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background: #fff;
+    background: #f0f2f5;
     margin: 0;
     padding: 20px;
     background-image: url('./imagem/goku\ house.webp');
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
 h1 {
-    color: #ddd;
+    color: #fdfdfd;
     margin-bottom: 20px;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.758);
+    text-shadow: 0 2px 8px #000000a2;
     font-size: 4rem;
 }
 
@@ -31,8 +31,8 @@ h1 {
     padding: 10px;
     width: 200px;
     border-radius: 8px;
-    border: 1px solid #ffffff;
-    box-shadow: 0 2px 8px black;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px #000000a2;
 }
 
 #searchBtn {
@@ -40,50 +40,56 @@ h1 {
     margin-left: 5px;
     border: none;
     border-radius: 8px;
-    background-color: #171ac4;
+    background-color: #219150;
     color: #fff;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#searchBtn:hover{
-    background-color: #171ac4;
-    box-shadow: 0 2px #000000a2;
-
+#searchBtn:hover {
+    background-color: #27ae60;
+    box-shadow: 0 2px 8px #000000a2;
+    ;
 }
 
-.results{
+.results {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
 }
 
-.card{
-    background: #000000c5;
+.card {
+    background: #474545db;
     border-radius: 10px;
+    margin: 0 40px;
     padding: 10px;
-    width: 200px;
+    width: 300px;
+    height: 500px;
     text-align: center;
-    color: #000000;
-    transition: all 200ms ease-in-outs;
-    box-shadow: rgb(252, 255, 85) -5px 5px, rgba(252, 255, 85) -10px 10px, rgba(252, 255, 85) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(0, 30, 255, 0.4) -5px 5px, rgba(7, 15, 230, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
-.card img{
+.card img {
+    height: 300px;
     width: 100%;
-    border-radius: 100%;
+    object-fit: contain;
     transition: all 200ms ease-in-out;
+}
 
+.card img:hover{
+    transform: scale(1.2);
 }
 
 .card:hover {
-    box-shadow: rgba(88, 240, 46, 0.4) -5px 5px, rgba(62, 240, 46, 0.3) -10px 10px, rgba(78, 240, 46, 0.2) -15px 15px, rgba(78, 240, 46, 0.1) -20px 20px, rgba(82, 240, 46, 0.05) -25px 25px;
+    box-shadow: rgb(235, 255, 232) -5px 5px, rgb(177, 255, 141) -5px 5px, rgb(133, 255, 92) -15px 15px, rgb(83, 255, 44) -20px 20px, rgb(51, 255, 0) -25px 25px;
 }
 
 .card:hover h3 {
-    color: #171ac4;
-    text-shadow: 0 2px 8px #171ac4;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 8px #ffffff;
 }
 
 .card:hover img {
@@ -108,6 +114,6 @@ h1 {
 }
 
 .card strong {
-    color: #171ac4;
+    color: #ffffff;
     font-weight: bold;
 }
